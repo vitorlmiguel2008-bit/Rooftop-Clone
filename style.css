@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+::selection{
+        background-color: #ad9966;
+        color: white;
+    }
+
+@font-face {
+    font-family: 'roboto'; 
+    src: url('fonts/Roboto.ttf') format('truetype'); 
+  }
+@font-face {
+    font-family: 'playfair'; 
+    src: url('fonts/PlayfairDisplay.ttf') format('truetype'); 
+  }
+  .esquerdafixa{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 20vh;
+    background-image: url(imgs/esquerdafixa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+  .viewMenu{
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    font-family: 'roboto';
+    font-size: 1em;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.4s;
+    rotate: calc(90deg);
+    white-space: nowrap;
+  }
+  .viewMenu:hover{
+    color: #ad9966;
+  }
+  .esquerdafixa:hover .viewMenu{
+    rotate: calc(0deg);
+    left: 5%;
+  }
+  .direitafixa{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 20vh;
+    background-image: url(imgs/direitafixa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+  .bookATable{
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    font-family: 'roboto';
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.4s;
+    rotate: calc(-90deg);
+    white-space: nowrap;
+    
+  }
+  .bookATable:hover{
+    color: #000000;
+  }
+  .direitafixa:hover .bookATable{
+    rotate: calc(0deg);
+    right: 5%;
+  }
+
+header{
+   
+    text-align: center;
+    padding: 10px ;
+}
+
+header ul{
+    padding: 0%;
+}
+
+header li{
+    display: inline-block;
+    width: 5%;
+    font-family: 'roboto';
+    font-size: 0.9em; 
+}
+
+#home{
+    color: #ad9966;
+    text-decoration: none;
+}
+
+.header-itens{
+    text-decoration: none;
+    color: black; 
+    transition: 0.4s;
+    font-weight: 450;  
+    
+}
+
+.header-itens:hover{
+    color: #ad9966;  
+}
+
+.logo{
+    width: 15%; 
+}
+
+.logo img{
+    
+    width: 27%; 
+}
+
+.pages::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.pagesdiv{
+    position: absolute;
+    top: 10.6%;
+    right: 34%;
+    width: 150px;
+    height: 13vh;
+    background-color: #ffffff;                  
+     transition: 0.4s;
+     opacity: 0;
+}
+
+.pages a:hover + .pagesdiv {
+    opacity: 1;
+    z-index: 2;
+}
+.pagesdiv:hover {
+    opacity: 1;
+    z-index: 2;
+}
+.pagesdiv li{
+    display: block;
+    font-family: 'roboto';
+    font-size: 1em; 
+    padding: 20px;
+}
+.blog::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+.blogdiv{
+    position: absolute;
+    top: 10.6%;
+    right: 29%;
+    width: 150px;
+    height: 13vh;
+    background-color: #ffffff;                  
+     transition: 0.4s;
+     opacity: 0;
+}
+
+.blog a:hover + .blogdiv {
+    opacity: 1;
+    z-index: 2;
+}
+.blogdiv:hover {
+    opacity: 1;
+    z-index: 2;
+}
+.blogdiv li{
+    display: block;
+    font-family: 'roboto';
+    font-size: 1em; 
+    padding: 20px;
+    white-space: nowrap;
+}
+.imgPrincipal{
+    
+    background-image: url(imgs/header-bg.png);
+    height: 80vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.TextOverImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'playfair';
+    font-size: 4.5em;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
+.TextOverImg2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'roboto';
+    font-size: 1.2em;
+    color: white;
+    font-weight: 380;
+    
+}
+
+.hr1{
+    width: 25%;
+    border:none;
+    height: 0.09px;
+    background-color: #b4b4b4;
+    margin: 20px auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
